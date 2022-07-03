@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/564x/7b/4c/38/7b4c38764d91ca35ba11b31156ac2094.jpg');
+        }
+        .maindiv {
+            background-image: url('https://cellularnews.com/wp-content/uploads/2020/03/plain-white-contemporary-325x485.jpg');
+            width: 350px;
+            height: 860px;
+            margin: auto;
+            border: 3px solid rgb(75, 75, 100);
+        }
+
+        form {
+            margin-top: 20px;
+            margin-left: 12px;
+        }
+
+        .gender {
+            text-align: center;
+        }
+
+        #btn button {
+            margin-left: 30%;
+            border: 2px solid white;
+            padding: 20px;
+            font-weight: 500;
+            color: silver;
+            background: rgb(102, 102, 236);
+            border-radius: 10px;
+        }
+
+        #btn button:hover{
+            background-color: darkblue;
+            color: whitesmoke;
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 112);
+        }
+        .foot{
+            border: 0px solid grey;
+            text-align: center;
+        }
+        input{
+            width: 300px;
+            border-radius: 8px;
+            color: black;
+            height: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="maindiv">
+            <form action="" method="get">
+
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" required autofocus placeholder="Enter Your First name">
+
+                <br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" required placeholder="Enter Your Last name ">
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+
+                <br><br>
+
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" required placeholder="Password">
+
+                <br><br>
+
+                <label for="repass">Confirm Password:</label>
+                <input type="password" name="repass" id="repass" required placeholder="Re-type to confirm ">
+
+                <br><br>
+
+                <label for="dob"> DOB:</label>
+                <input type="date" name="dob" id="dob">
+
+                <br><br>
+
+                <div class="gender">
+
+                    <label for="gender">Select Your Gender:</label>
+                </div>
+
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+
+
+                <label for="other">Prefer Not To <strong>SAY</strong> </label>
+                <input type="radio" name="gender" id="other">
+
+                <br><br> <br>
+                
+                <label for="intro"><b></b>Tell us about YOURSELF</b></label>
+                <br>
+                <textarea name="intro" id="intro" cols="40" rows="10" placeholder="Write here"></textarea>
+
+                <br> <br>
+                <div id="btn">
+
+                    <button value="Submit" type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+        <div class="foot">
+            Already have an Account? 
+            <a href="./index.html" target="_blank"><em> Sign in </em></a>
+        </div>
+</body>
+
+</html>
